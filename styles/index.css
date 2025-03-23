@@ -148,25 +148,7 @@ header a:hover{
     ,url("/media/Investigador.jpg");
 
 }
-/*Esto es necesario?, la imagen no se utiliza en la pagina*/
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/media/leyendo_periodico.jpg");
-}
 
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/media/Usuario_Redes.png");
-
-}
 #nuestros-productos {
     background-color: rgb(30, 30, 30);
     color: white;
@@ -242,10 +224,6 @@ header a:hover{
     background-size: cover;
     background-position: center;
 }
-
-/* Más estilos para el resto de las cartas si es necesario */
-
-
 
 #final{
     display: flex;
@@ -350,7 +328,7 @@ footer .container{
     }
 
     #nuestros-programas .carta{
-        padding: 50px;
+        padding: 20px;
         background-size: 100% 150px;
         background-repeat: no-repeat;
         background-position-y: 0;
@@ -422,4 +400,22 @@ footer .container{
 .clicked-button {
     background-color: black !important; /* Cambia a negro cuando se hace clic */
     color: white;
+}
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px; /* Ajusta la altura según necesites */
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.carta h3 {
+    margin: 0;
+}
+
+.carta button {
+    margin-top: auto; /* Empuja el botón hacia la parte inferior */
 }
